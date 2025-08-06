@@ -1,16 +1,12 @@
 #******************************************************************************
 # barrier.py
 #******************************************************************************
-# Name: Eduardo Esteves 
-#******************************************************************************
-# Remarks (optional):
-#
-#
+# Eduardo E 
 #
 
 import random
 
-#number of tims to be simulated
+#number of times to be simulated
 
 trios = 10**5
 
@@ -30,7 +26,7 @@ for i in range(trios):
     c = random.randrange(50,71)
 #define the parameters to win     
     you_win = a < 65 and b < 65 and c < 65
-#create an if-statement for every time you are able to make at least a dollar  
+#create an if-statement for every time you can make at least a dollar  
     if you_win:
         if c > 55:
             earned += (c - 55)
@@ -47,5 +43,6 @@ prob = times_won/trios
 print(f'Average amount earned: {average_earned}')
 
 print(f'Probability of winning at least one dollar: {prob}')
+
 
 
